@@ -1,0 +1,1 @@
+with open(input("filename : "), "r") as f : print(sum(int("".join([c for id, c in enumerate(([char for char in line if char.isnumeric()]*2)) if id==0 or id==len(([char for char in line if char.isnumeric()]*2))-1])) for line in f))
